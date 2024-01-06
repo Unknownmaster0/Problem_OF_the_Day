@@ -9,8 +9,10 @@ int main()
     return 0;
 }
 
+// Time complexity -> O(b * log(log b)) [sieve of eras] + O(sqrt(b) - (sqrt(b) - sqrt(a-1))) [for finding prime factorization]
 	int sumOfPowers(int a, int b){
         
+        // space complexity -> O(b)
         vector<int>isPrime(b+1, 1);
         
         isPrime[0] = isPrime[1] = 0;
@@ -42,12 +44,6 @@ int main()
 	            if(num == 1)
 	                break;
 	        }
-            // do dry run for a = 9 and b = 12 then let to understand this line.
-/*when the a increment to 10, and we check the prime factorization for this then, sqrt(10) = 3, but the prime 
-factor of the 10 = 2 * 5 , so, after coming from the above loop, then we have still 5 in the num, which is prime
-thus we increase the count.
-*/
-// if the num is still greater than 1 means that it is still prime , then increment the count by one also.
 	        if(num > 1) count++;
 	        sumPower += count;
 	    }
