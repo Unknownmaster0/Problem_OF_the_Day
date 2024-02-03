@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// problem link -> https://www.geeksforgeeks.org/problems/decimal-equivalent-of-binary-linked-list/1
+
 struct Node
 {
     int data;
