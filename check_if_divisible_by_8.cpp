@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Problem link -> https://www.geeksforgeeks.org/problems/check-if-a-number-is-divisible-by-83957/1
+
     int DivisibleByEight(string s){
         //code here
         // to get the last three digit of the number -> divisibility of 8 -> if the last three digit is 000 or divisible by 8.
