@@ -2,6 +2,8 @@
 #include <algorithm>
 using namespace std;
 
+// problem link -> https://leetcode.com/problems/maximum-odd-binary-number/?envType=daily-question&envId=2024-03-01
+
 class Solution {
 public:
     string maximumOddBinaryNumber(string s) {
