@@ -51,12 +51,12 @@ public:
 
         prevSlow->next = reverse(slow); // reversing the half part of the list.
 
-        slow = head;
+        slow = head; // now point slow, to head again, because we want a pointer to head. INstead of declaring a new pointer use the slow.  As 'slow' is free now.
 
         // merging the list in reorder fashion.
         while (slow != prevSlow)
         {
-            fast = prevSlow->next;
+            fast = prevSlow->next;  // similarly using fast here, as fast is free here.
             prevSlow->next = fast->next;
             fast->next = slow->next;
             slow->next = fast;
